@@ -2,9 +2,9 @@
 
 A smart, conjunctive canal-and-groundwater management system for the tail-end of the Lower Ganga Canal, Prayagraj — built for the 1M1B Green Skills & Applied AI for Climate Action internship.
 
-**Live prototype:** 
+**Live prototype:** https://jalsetu-app.streamlit.app/
 
-**Full portfolio deck:** [portfolio/JalSetu_Portfolio.pdf](portfolio/JalSetu_Portfolio.pdf)
+**Full portfolio deck:** 
 
 ## The Problem
 When the Canal Runs Dry, the Aquifer Pays for It
@@ -33,6 +33,7 @@ Tools & technologies used
 ## Prototype
 A Command Console You Can Actually Click Through
 
+https://jalsetu-app.streamlit.app/
 
 ## Impact & Testing
 Tested against five real scenarios
