@@ -55,12 +55,13 @@ From prototype to pilot
 >>.gitignore
 >>portfolio/
 >>>JalSetu_Portfolio.pptx
->>>JalSetu_Portfolio.pdf
 >>prototype/
 >>>index.html
 >>hardware/
->>>build-guide.md                 
->>>jalsetu_mini.ino              
+>>>build-guide.md
+    
+>>>jalsetu_mini.ino
+             
 >>>wiring-diagram.svg             
 
 ## Author
