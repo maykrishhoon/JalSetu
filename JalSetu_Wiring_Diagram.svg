@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 820" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="1150" height="820" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="575" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#0E4B49">JalSetu Mini — Benchtop Demonstrator Wiring Diagram</text>
+  <text x="575" y="66" text-anchor="middle" font-size="13" fill="#6B7A79">Arduino Uno &#8226; 2&#215; HC-SR04 &#8226; SG90 Micro Servo &#8226; 16&#215;2 I2C LCD &#8226; Push Button</text>
+
+  <!-- ================= Arduino Uno (center) ================= -->
+  <rect x="465" y="300" width="220" height="220" rx="10" fill="#FBF0DF" stroke="#B8721E" stroke-width="2"/>
+  <text x="575" y="335" text-anchor="middle" font-size="16" font-weight="700" fill="#8A5A1E">ARDUINO UNO</text>
+  <text x="575" y="356" text-anchor="middle" font-size="11" fill="#8A5A1E">(microcontroller)</text>
+
+  <!-- Arduino pin ticks + labels (left edge) -->
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <circle cx="465" cy="390" r="4" fill="#0E4B49"/><text x="450" y="394" text-anchor="end">D9</text>
+    <circle cx="465" cy="415" r="4" fill="#0E4B49"/><text x="450" y="419" text-anchor="end">D8</text>
+    <circle cx="465" cy="465" r="4" fill="#0E4B49"/><text x="450" y="469" text-anchor="end">D2</text>
+    <circle cx="465" cy="490" r="4" fill="#0E4B49"/><text x="450" y="494" text-anchor="end">D7</text>
+  </g>
+  <!-- right edge -->
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <circle cx="685" cy="390" r="4" fill="#0E4B49"/><text x="700" y="394" text-anchor="start">D10</text>
+    <circle cx="685" cy="440" r="4" fill="#0E4B49"/><text x="700" y="444" text-anchor="start">A4 (SDA)</text>
+    <circle cx="685" cy="465" r="4" fill="#0E4B49"/><text x="700" y="469" text-anchor="start">A5 (SCL)</text>
+  </g>
+  <!-- bottom edge (power + analog) -->
+  <g font-size="12" fill="#8A5A1E" font-weight="600">
+    <circle cx="510" cy="520" r="4" fill="#B8461E"/><text x="510" y="540" text-anchor="middle">5V</text>
+    <circle cx="575" cy="520" r="4" fill="#0E4B49"/><text x="575" y="540" text-anchor="middle" fill="#0E4B49">A0</text>
+    <circle cx="640" cy="520" r="4" fill="#555555"/><text x="640" y="540" text-anchor="middle">GND</text>
+  </g>
+  <path d="M 575 520 V 590" fill="none" stroke="#0E4B49" stroke-width="2"/>
+
+  <!-- ================= HC-SR04 Sensor A: Canal / Tail-Chak Level (top-left) ================= -->
+  <rect x="70" y="80" width="220" height="110" rx="10" fill="#EAF3F1" stroke="#0E4B49" stroke-width="2"/>
+  <text x="180" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#0E4B49">HC-SR04 &#8226; SENSOR A</text>
+  <text x="180" y="127" text-anchor="middle" font-size="11" fill="#3D5A56">Canal / Tail-Chak Water Level</text>
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <text x="255" y="150" text-anchor="end">TRIG</text><circle cx="270" cy="146" r="4" fill="#0E4B49"/>
+    <text x="255" y="172" text-anchor="end">ECHO</text><circle cx="270" cy="168" r="4" fill="#0E4B49"/>
+  </g>
+  <!-- wires to Arduino D9 / D8 -->
+  <path d="M 270 146 H 380 V 390 H 465" fill="none" stroke="#0E4B49" stroke-width="2"/>
+  <path d="M 270 168 H 400 V 415 H 465" fill="none" stroke="#2F8F86" stroke-width="2"/>
+
+  <!-- ================= HC-SR04 Sensor B: Groundwater Level (bottom-left) ================= -->
+  <rect x="70" y="560" width="220" height="110" rx="10" fill="#EAF3F1" stroke="#0E4B49" stroke-width="2"/>
+  <text x="180" y="588" text-anchor="middle" font-size="14" font-weight="700" fill="#0E4B49">HC-SR04 &#8226; SENSOR B</text>
+  <text x="180" y="607" text-anchor="middle" font-size="11" fill="#3D5A56">Groundwater / Piezometer Level</text>
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <text x="255" y="630" text-anchor="end">TRIG</text><circle cx="270" cy="626" r="4" fill="#0E4B49"/>
+    <text x="255" y="652" text-anchor="end">ECHO</text><circle cx="270" cy="648" r="4" fill="#0E4B49"/>
+  </g>
+  <!-- wires to Arduino D7 / D6 (D6 routed as second echo-style line into A-side lower pins) -->
+  <path d="M 270 626 H 410 V 490 H 465" fill="none" stroke="#0E4B49" stroke-width="2"/>
+  <path d="M 270 648 H 430 V 505 H 465" fill="none" stroke="#2F8F86" stroke-width="2"/>
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <circle cx="465" cy="505" r="4" fill="#0E4B49"/><text x="450" y="509" text-anchor="end">D6</text>
+  </g>
+
+  <!-- ================= Push Button: Manual Override (left-middle) ================= -->
+  <rect x="70" y="320" width="220" height="100" rx="10" fill="#FBE9E3" stroke="#C1502E" stroke-width="2"/>
+  <text x="180" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#C1502E">PUSH BUTTON</text>
+  <text x="180" y="367" text-anchor="middle" font-size="11" fill="#8A3D28">Manual Override (JE control)</text>
+  <g font-size="12" fill="#C1502E" font-weight="600">
+    <text x="255" y="390" text-anchor="end">SIG</text><circle cx="270" cy="386" r="4" fill="#C1502E"/>
+  </g>
+  <path d="M 270 386 H 340 V 465 H 465" fill="none" stroke="#C1502E" stroke-width="2"/>
+  <text x="345" y="380" font-size="10" fill="#8A3D28">(other leg &#8594; GND, internal pull-up used)</text>
+
+  <!-- ================= SG90 Servo: Gate Actuator (top-right) ================= -->
+  <rect x="860" y="80" width="220" height="110" rx="10" fill="#EAF3F1" stroke="#0E4B49" stroke-width="2"/>
+  <text x="970" y="108" text-anchor="middle" font-size="14" font-weight="700" fill="#0E4B49">SG90 MICRO SERVO</text>
+  <text x="970" y="127" text-anchor="middle" font-size="11" fill="#3D5A56">Gate Actuator (paper/card flap)</text>
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <text x="895" y="150" text-anchor="start">SIGNAL</text><circle cx="880" cy="146" r="4" fill="#0E4B49"/>
+  </g>
+  <path d="M 880 146 H 760 V 390 H 685" fill="none" stroke="#0E4B49" stroke-width="2"/>
+
+  <!-- ================= I2C LCD 16x2: Status Display (bottom-right) ================= -->
+  <rect x="860" y="560" width="220" height="110" rx="10" fill="#EAF3F1" stroke="#0E4B49" stroke-width="2"/>
+  <text x="970" y="588" text-anchor="middle" font-size="14" font-weight="700" fill="#0E4B49">16&#215;2 LCD (I2C)</text>
+  <text x="970" y="607" text-anchor="middle" font-size="11" fill="#3D5A56">Status Display</text>
+  <g font-size="12" fill="#0E4B49" font-weight="600">
+    <text x="895" y="630" text-anchor="start">SDA</text><circle cx="880" cy="626" r="4" fill="#0E4B49"/>
+    <text x="895" y="652" text-anchor="start">SCL</text><circle cx="880" cy="648" r="4" fill="#0E4B49"/>
+  </g>
+  <path d="M 880 626 H 740 V 440 H 685" fill="none" stroke="#0E4B49" stroke-width="2"/>
+  <path d="M 880 648 H 720 V 465 H 685" fill="none" stroke="#2F8F86" stroke-width="2"/>
+
+  <!-- ================= Shared Power Rails ================= -->
+  <line x1="100" y1="750" x2="1050" y2="750" stroke="#B8461E" stroke-width="3"/>
+  <text x="60" y="754" font-size="13" font-weight="700" fill="#B8461E" text-anchor="end">+5V</text>
+  <line x1="100" y1="778" x2="1050" y2="778" stroke="#555555" stroke-width="3"/>
+  <text x="60" y="782" font-size="13" font-weight="700" fill="#555555" text-anchor="end">GND</text>
+
+  <!-- drops from Arduino power pins to rails -->
+  <path d="M 510 520 V 750" fill="none" stroke="#B8461E" stroke-width="2"/>
+  <path d="M 640 520 V 778" fill="none" stroke="#555555" stroke-width="2"/>
+
+  <!-- drops from each peripheral to rails (short stubs at component x-centers) -->
+  <path d="M 180 190 V 750" fill="none" stroke="#B8461E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M 195 190 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <path d="M 180 670 V 750" fill="none" stroke="#B8461E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M 195 670 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <path d="M 970 190 V 750" fill="none" stroke="#B8461E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M 985 190 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <path d="M 970 670 V 750" fill="none" stroke="#B8461E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M 985 670 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <path d="M 250 420 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <path d="M 560 680 V 750" fill="none" stroke="#B8461E" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M 600 680 V 778" fill="none" stroke="#555555" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- ================= Potentiometer: Manual Gate Position (center, below Arduino) ================= -->
+  <rect x="490" y="590" width="180" height="90" rx="10" fill="#FBE9E3" stroke="#C1502E" stroke-width="2"/>
+  <text x="580" y="616" text-anchor="middle" font-size="13" font-weight="700" fill="#C1502E">POTENTIOMETER</text>
+  <text x="580" y="634" text-anchor="middle" font-size="10.5" fill="#8A3D28">Manual Gate Position (10k&#937;)</text>
+  <text x="580" y="654" text-anchor="middle" font-size="10.5" fill="#8A3D28">wiper &#8594; A0 &#8226; outer legs &#8594; 5V / GND</text>
+
+  <!-- Legend -->
+  <g font-size="11" fill="#3D5A56">
+    <line x1="820" y1="740" x2="845" y2="740" stroke="#0E4B49" stroke-width="2"/><text x="850" y="744">Signal wire</text>
+    <line x1="820" y1="758" x2="845" y2="758" stroke="#B8461E" stroke-width="2"/><text x="850" y="762">+5V rail</text>
+    <line x1="820" y1="776" x2="845" y2="776" stroke="#555555" stroke-width="2"/><text x="850" y="780">GND rail</text>
+  </g>
+
+  <text x="575" y="805" text-anchor="middle" font-size="11" fill="#8A9A98">Dashed drops = shared power/ground bus &#8226; solid orthogonal lines = individual signal pins &#8226; crossing lines with no dot = not connected</text>
+</svg>
