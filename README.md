@@ -12,13 +12,17 @@ When the Canal Runs Dry, the Aquifer Pays for It
 WHAT'S ACTUALLY GOING ON
 
 >When the Lower Ganga Canal falls short at the tail end, farmers do the only thing they can — they drill a tubewell and pump groundwater instead.
+
 >Nobody's really managing this as one system. The Irrigation Department runs the canal, the Groundwater Department/CGWB watches the aquifer, and the two never actually talk to each other.
+
 >Prayagraj is already flagged as a groundwater-mining hotspot. There's no local sensor watching it closely enough to catch trouble before it sets in.
 
 Who's affected, and why it matters
 
 > Tail-end smallholder farmers absorb yield loss and rising diesel-pumping costs every time the canal underdelivers.
+
 > UP Irrigation Dept. engineers cannot manually police an ~8,183 km distributary network for equity.
+
 > Groundwater is already the dominant irrigation source in UP — so a canal failure here is really a shared-aquifer failure.
 
 ## What I Discovered
@@ -28,6 +32,7 @@ I went in expecting a water-scarcity problem. What I actually found was an infor
 
 ## The AI-Enabled Solution
 How AI is used
+
 >A time-series LSTM model ingests canal discharge, groundwater depth, and weather data to output a Predicted Deficit Index — the core prediction driving every downstream decision.
 
 Tools & technologies used
@@ -55,6 +60,7 @@ Why that last row is the whole point:  a system watching only the canal would le
 From prototype to pilot
 
 >Next Milestone
+
 >>A Phase 1 pilot on 1–2 distressed minors in Prayagraj, feeding ~200 ha — instrumenting real gates with the same decision logic validated here.
 
 ## Repository Structure
