@@ -4,7 +4,7 @@ A smart, conjunctive canal-and-groundwater management system for the tail-end of
 
 **Live prototype:** https://jalsetu-app.streamlit.app/
 
-**Full portfolio deck:** 
+**Full portfolio deck:** https://maykrishhoon.github.io/JalSetu/
 
 ## The Problem
 When the Canal Runs Dry, the Aquifer Pays for It
@@ -57,11 +57,11 @@ From prototype to pilot
 >>>JalSetu_Portfolio.pptx
 >>>JalSetu_Portfolio.pdf
 >>prototype/
->>>index.html                    ← JalSetu_Website.html (renamed)
+>>>index.html
 >>hardware/
-    >>>build-guide.md                 ← JalSetu_Mini_Build_Guide.md
-    >>>jalsetu_mini.ino                ← JalSetu_Mini_Arduino_Code.ino
-    >>>wiring-diagram.svg             ← JalSetu_Wiring_Diagram.svg
+>>>build-guide.md                 
+>>>jalsetu_mini.ino              
+>>>wiring-diagram.svg             
 
 ## Author
 Krish — Rajkiya Engineering College, Banda
