@@ -2,7 +2,8 @@
 
 A smart, conjunctive canal-and-groundwater management system for the tail-end of the Lower Ganga Canal, Prayagraj — built for the 1M1B Green Skills & Applied AI for Climate Action internship.
 
-**Live prototype:** file:///C:/Users/Asus/Downloads/jalsetu%20dashboard.html#problem
+**Live prototype:** 
+
 **Full portfolio deck:** [portfolio/JalSetu_Portfolio.pdf](portfolio/JalSetu_Portfolio.pdf)
 
 ## The Problem
@@ -47,19 +48,19 @@ From prototype to pilot
 >>A Phase 1 pilot on 1–2 distressed minors in Prayagraj, feeding ~200 ha — instrumenting real gates with the same decision logic validated here.
 
 ## Repository Structure
-JalSetu/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── portfolio/
-│   ├── JalSetu_Portfolio.pptx
-│   └── JalSetu_Portfolio.pdf
-├── prototype/
-│   └── index.html                    ← JalSetu_Website.html (renamed)
-└── hardware/
-    ├── build-guide.md                 ← JalSetu_Mini_Build_Guide.md
-    ├── jalsetu_mini.ino                ← JalSetu_Mini_Arduino_Code.ino
-    └── wiring-diagram.svg             ← JalSetu_Wiring_Diagram.svg
+>JalSetu/
+>>README.md
+>>LICENSE
+>>.gitignore
+>>portfolio/
+>>>JalSetu_Portfolio.pptx
+>>>JalSetu_Portfolio.pdf
+>>prototype/
+>>>index.html                    ← JalSetu_Website.html (renamed)
+>>hardware/
+    >>>build-guide.md                 ← JalSetu_Mini_Build_Guide.md
+    >>>jalsetu_mini.ino                ← JalSetu_Mini_Arduino_Code.ino
+    >>>wiring-diagram.svg             ← JalSetu_Wiring_Diagram.svg
 
 ## Author
 Krish — Rajkiya Engineering College, Banda
